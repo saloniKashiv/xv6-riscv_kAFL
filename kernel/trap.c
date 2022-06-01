@@ -16,6 +16,12 @@ void kernelvec();
 
 extern int devintr();
 
+uint64
+get_panic_addr(void)
+{
+  return (uint64) &panic;
+}
+
 void
 trapinit(void)
 {

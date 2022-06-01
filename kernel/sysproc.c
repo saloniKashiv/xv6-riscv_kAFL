@@ -8,6 +8,12 @@
 #include "proc.h"
 
 uint64
+sys_get_panic_addr(void)
+{
+  return get_panic_addr();
+}
+
+uint64
 sys_exit(void)
 {
   int n;

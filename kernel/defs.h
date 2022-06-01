@@ -145,6 +145,7 @@ void            trapinit(void);
 void            trapinithart(void);
 extern struct spinlock tickslock;
 void            usertrapret(void);
+uint64          get_panic_addr(void);
 
 // uart.c
 void            uartinit(void);
